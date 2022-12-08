@@ -138,11 +138,8 @@ You will also need an ASGI server, for production such as <a href="https://www.u
 ```console
 $ pip install "uvicorn[standard]"
 
----> 100%
 ```
-
-</div>
-
+ </div> 
 ## Example
 
 ### Create it

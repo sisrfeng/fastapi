@@ -53,7 +53,13 @@ But by following the steps above, it will be able to do some performance optimiz
 
 ## Technical Details
 
-Modern versions of Python have support for **"asynchronous code"** using something called **"coroutines"**, with **`async` and `await`** syntax.
+Modern versions of Python have support for **"asynchronous code"**
+    using something called **"coroutines"**,
+    with **`async` and `await`** syntax.
+
+    All that is
+    what powers FastAPI (through  Starlette)
+    and what makes it have such an impressive performance.
 
 Let's see that phrase by parts in the sections below:
 
@@ -293,7 +299,9 @@ To see how to achieve this parallelism in production see the section about [Depl
 
 ## `async` and `await`
 
-Modern versions of Python have a very intuitive way to define asynchronous code. This makes it look just like normal "sequential" code and do the "awaiting" for you at the right moments.
+Modern versions of Python have a very intuitive way to define asynchronous code.
+This makes it look just like normal "sequential" code and
+do the "awaiting" for you at the right moments.
 
 When there is an operation that will require waiting before giving the results and has support for these new Python features, you can code it like:
 
@@ -354,11 +362,17 @@ But if you want to use `async` / `await` without FastAPI, you can do it as well.
 
 ### Write your own async code
 
-Starlette (and **FastAPI**) are based on <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, which makes it compatible with both Python's standard library <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> and <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
+Starlette (and **FastAPI**) are based on
+    <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, which makes it compatible with both Python's standard library <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> and <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
 
-In particular, you can directly use <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> for your advanced concurrency use cases that require more advanced patterns in your own code.
+In particular,
+you can directly use <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> for your advanced concurrency use cases that require more advanced patterns in your own code.
 
-And even if you were not using FastAPI, you could also write your own async applications with <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> to be highly compatible and get its benefits (e.g. *structured concurrency*).
+And even
+if you were not
+using FastAPI,
+    you could also write your own async applications with <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> to be highly compatible and
+    get its benefits (e.g.  *structured concurrency*).
 
 ### Other forms of asynchronous code
 
@@ -376,19 +390,21 @@ In previous versions of NodeJS / Browser JavaScript, you would have used "callba
 
 ## Coroutines
 
-**Coroutine** is just the very fancy term for the thing returned by an `async def` function. Python knows that it is something like a function that it can start and that it will end at some point, but that it might be paused ⏸ internally too, whenever there is an `await` inside of it.
+**Coroutine** is just the very fancy term for the ¿thing¿ returned by
+    an `async def` function.
 
-But all this functionality of using asynchronous code with `async` and `await` is many times summarized as using "coroutines". It is comparable to the main key feature of Go, the "Goroutines".
+    Python knows that it is something ¿like a function¿ 
+        that  it can start and
+        that  it will end at some point,
+        but that it might be paused ⏸ internally too,
+            whenever there is an `await` inside of it.
 
-## Conclusion
-
-Let's see the same phrase from above:
-
-> Modern versions of Python have support for **"asynchronous code"** using something called **"coroutines"**, with **`async` and `await`** syntax.
-
-That should make more sense now. ✨
-
-All that is what powers FastAPI (through Starlette) and what makes it have such an impressive performance.
+But all this functionality of
+using asynchronous code with `async` and `await` is many times summarized as
+using "coroutines".
+It is comparable to
+the main key feature of Go,
+the "Goroutines".
 
 ## Very Technical Details
 
