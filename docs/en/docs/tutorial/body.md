@@ -79,7 +79,9 @@ For example, this model above declares a JSON "`object`" (or Python `dict`) like
 
 ## Declare it as a parameter
 
-To add it to your *path operation*, declare it the same way you declared path and query parameters:
+To add it to your *path operation*,
+declare it the same way you declared path and
+query parameters:
 
 === "Python 3.6 and above"
 
@@ -197,7 +199,9 @@ You can declare path parameters and request body at the same time.
 
 ## Request body + path + query parameters
 
-You can also declare **body**, **path** and **query** parameters, all at the same time.
+You can also declare **body**,
+                     **path** and
+                    **query** parameters, all at the same time.
 
 **FastAPI** will recognize each of them and take the data from the correct place.
 
