@@ -120,7 +120,11 @@ And will be also used in the API docs inside each *path operation* that needs th
 
 ## Editor support
 
-In your editor, inside your function you will get type hints and completion everywhere (this wouldn't happen if you received a `dict` instead of a Pydantic model):
+In your editor,
+inside your function you will get type hints and
+completion everywhere (this wouldn't happen if you received a `dict` instead of a Pydantic model):
+(models are simply ¿classes¿ which inherit from `BaseModel`).
+
 
 <img src="/img/tutorial/body/image03.png">
 
@@ -171,7 +175,13 @@ Inside of the function, you can access all the attributes of the model object di
 
 You can declare path parameters and request body at the same time.
 
-**FastAPI** will recognize that the function parameters that match path parameters should be **taken from the path**, and that function parameters that are declared to be Pydantic models should be **taken from the request body**.
+**FastAPI** will recognize that 
+    the function parameters 
+        that match path parameters
+        should be **taken from the path**,
+    that function parameters 
+        that are declared to be Pydantic models
+        should be **taken from the request body**.
 
 === "Python 3.6 and above"
 
