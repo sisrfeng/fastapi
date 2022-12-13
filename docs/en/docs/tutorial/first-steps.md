@@ -83,11 +83,16 @@ This schema definition includes your API paths, the possible parameters they tak
 
 The term "schema" might also refer to the shape of some data, like a JSON content.
 
-In that case, it would mean the JSON attributes, and data types they have, etc.
+In that case, it would mean the ¿JSON attributes¿, and data types they have, etc.
 
 #### OpenAPI and JSON Schema
 
-OpenAPI defines an API schema for your API. And that schema includes definitions (or "schemas") of the data sent and received by your API using **JSON Schema**, the standard for JSON data schemas.
+OpenAPI defines an API schema for your API.
+And that schema includes definitions (or "schemas")
+of the data sent and
+received by
+your API using **JSON Schema**,
+the standard for JSON data schemas.
 
 #### Check the `openapi.json`
 

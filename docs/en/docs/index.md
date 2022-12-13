@@ -304,7 +304,11 @@ Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bl
 
 ![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-04-swagger-03.png)
 
-* Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
+* Then click on the "Execute" button,
+the user interface will communicate with your API,
+send the parameters,
+get the results and
+show them on the screen:
 
 ![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-05-swagger-04.png)
 
@@ -346,7 +350,8 @@ item: Item
 * Validation of data:
     * Automatic and clear errors when the data is invalid.
     * Validation even for deeply nested JSON objects.
-* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of input data: coming from the network to Python data and types. Reading from:
+* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of input data: coming from the network to Python data and
+types. Reading from:
     * JSON.
     * Path parameters.
     * Query parameters.
@@ -354,7 +359,8 @@ item: Item
     * Headers.
     * Forms.
     * Files.
-* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of output data: converting from Python data and types to network data (as JSON):
+* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of output data: converting from Python data and types to
+network data (as JSON):
     * Convert Python types (`str`, `int`, `float`, `bool`, `list`, etc).
     * `datetime` objects.
     * `UUID` objects.
@@ -378,7 +384,7 @@ Coming back to the previous code example, **FastAPI** will:
     * Check that it has a required attribute `name` that should be a `str`.
     * Check that it has a required attribute `price` that has to be a `float`.
     * Check that it has an optional attribute `is_offer`, that should be a `bool`, if present.
-    * All this would also work for deeply nested JSON objects.
+    * All this would also work for ¿deeply nested¿ JSON objects.
 * Convert from and to JSON automatically.
 * Document everything with OpenAPI, that can be used by:
     * Interactive documentation systems.
@@ -413,7 +419,7 @@ Try changing the line with:
 
 For a more complete example including more features, see the <a href="https://fastapi.tiangolo.com/tutorial/">Tutorial - User Guide</a>.
 
-**Spoiler alert**: the tutorial - user guide includes:
+**Spoiler剧情透露 alert**: the tutorial - user guide includes:
 
 * Declaration of **parameters** from other different places as: **headers**, **cookies**, **form fields** and **files**.
 * How to set **validation constraints** as `maximum_length` or `regex`.
